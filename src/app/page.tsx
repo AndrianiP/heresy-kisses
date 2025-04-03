@@ -282,7 +282,7 @@ const Home: React.FC = () => {
 
           {/* --- Text Content (Unchanged) --- */}
           <div
-            className="z-10 flex flex-row gap-0 text-[15rem] "
+            className="z-10 flex flex-row gap-0 text-center text-[10rem] md:text-[15rem]"
             style={{ textShadow: "2px 4px 4px #00000099" }}
           >
             <h1>H</h1>
@@ -293,7 +293,7 @@ const Home: React.FC = () => {
             <h1>Y</h1>
           </div>
           <div
-            className="z-10 flex flex-row text-[8rem]"
+            className="z-10 flex flex-row  text-[5rem] md:text-[8rem]"
             style={{ textShadow: "2px 4px 4px #00000099" }}
           >
             <h1>K</h1>
