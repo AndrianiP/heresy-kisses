@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 "use client";
 import Image from "next/image";
@@ -70,6 +71,7 @@ interface AnimationConfig {
   translateXAmount?: number; // Optional, not used in the current implementation
   additionalRotateAmount?: number;
   animationDuration?: number;
+  animationEasing?: (t: number) => number; // Easing function
 }
 
 // Component Props
@@ -131,7 +133,7 @@ const AnimatedImage: React.FC<AnimatedImageProps> = ({
   // --- Animated Styles Type ---
   // Define the type for the style object used in animated.div
   // Use animated.div's style prop type which accepts AnimatedValue objects
-  const animatedStyle: CSSProperties & { transform?: any } = {
+  const animatedStyle: CSSProperties = {
     width: width,
     height: height,
     transform: to(
@@ -141,7 +143,7 @@ const AnimatedImage: React.FC<AnimatedImageProps> = ({
         `translateY(${y}px) rotate(${
           initialRotate + rot
         }deg) ${scaleString}`.trim(),
-    ),
+    ) as unknown as string,
     willChange: "transform",
     transformOrigin: "center center",
   };
