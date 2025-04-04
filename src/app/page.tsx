@@ -165,149 +165,179 @@ const AnimatedImage: React.FC<AnimatedImageProps> = ({
   );
 };
 
-const Home: React.FC = () => {
-  return (
-    <main className="bg-primary text-white ">
-      <div className="flex h-screen w-screen flex-col items-center justify-center overflow-hidden leading-none tracking-wide">
-        <div className="relative flex h-3/4 w-3/5 flex-col items-center justify-center">
-          <AnimatedImage
-            src="/kiss.png"
-            width={100}
-            height={100}
-            alt="Kiss 1"
-            className="pointer-events-none absolute left-40 top-52 rotate-[210deg] scale-x-[-1] "
-            animationConfig={{
-              translateYAmount: -60,
-              additionalRotateAmount: -30,
-              animationDuration: 10189,
-              animationEasing: easings.easeInOutSine,
-            }}
-          />
-          <AnimatedImage
-            src="/kiss.png"
-            width={140}
-            height={140}
-            alt="Kiss 2"
-            className="pointer-events-none absolute left-[25rem] top-0 rotate-[30deg]"
-            animationConfig={{
-              translateYAmount: -33,
-              additionalRotateAmount: -53,
-              animationDuration: 14418,
-              animationEasing: easings.easeInOutSine,
-            }}
-          />
+const Home: React.FC = () => (
+  <main className="bg-primary text-white ">
+    <div className="flex h-screen w-screen flex-col items-center justify-center overflow-hidden leading-none tracking-wide">
+      <div className="relative flex h-3/4 w-3/5 flex-col items-center justify-center">
+        {/* 1 */}
+        <AnimatedImage
+          src="/HersheyKiss.png"
+          width={100}
+          height={100}
+          alt="Kiss 1"
+          className="pointer-events-none absolute left-16 top-60 rotate-[210deg] scale-x-[-1] "
+          animationConfig={{
+            translateYAmount: -60,
+            additionalRotateAmount: -30,
+            animationDuration: 10189,
+            animationEasing: easings.easeInOutSine,
+          }}
+        />
+        {/* 2 */}
+        <AnimatedImage
+          src="/HersheyKiss.png"
+          width={65}
+          height={65}
+          alt="Kiss 4"
+          className="pointer-events-none absolute left-56 top-16 rotate-[320deg] "
+          animationConfig={{
+            translateYAmount: 31,
+            additionalRotateAmount: 71,
+            animationDuration: 6193,
+            animationEasing: easings.easeInOutSine,
+          }}
+        />
+        <AnimatedImage
+          src="/HersheyKiss.png"
+          width={140}
+          height={140}
+          alt="Kiss 2"
+          className="pointer-events-none absolute left-[25rem] top-0 rotate-[30deg]"
+          animationConfig={{
+            translateYAmount: -33,
+            additionalRotateAmount: -53,
+            animationDuration: 14418,
+            animationEasing: easings.easeInOutSine,
+          }}
+        />
+        {/* 3 */}
+        <AnimatedImage
+          src="/HersheyKiss.png"
+          width={80}
+          height={80}
+          alt="Kiss 3"
+          className="pointer-events-none absolute right-[28rem] top-14 rotate-[135deg] scale-x-[-1]"
+          animationConfig={{
+            translateYAmount: -100,
+            additionalRotateAmount: -250,
+            animationDuration: 17313,
+            animationEasing: easings.easeInOutSine,
+          }}
+        />
+        {/* 4 */}
+        <AnimatedImage
+          src="/HersheyKiss.png"
+          width={120}
+          height={120}
+          alt="Kiss 4"
+          className="pointer-events-none absolute right-64 top-2 rotate-[340deg] scale-x-[-1]"
+          animationConfig={{
+            translateYAmount: -42,
+            additionalRotateAmount: 33,
+            animationDuration: 8738,
+            animationEasing: easings.easeInOutSine,
+          }}
+        />
+        {/* 5 */}
+        <AnimatedImage
+          src="/HersheyKiss.png"
+          width={60}
+          height={60}
+          alt="Kiss 4"
+          className="pointer-events-none absolute right-28 top-48 rotate-[25deg] scale-x-[-1]"
+          animationConfig={{
+            translateYAmount: -31,
+            additionalRotateAmount: 21,
+            animationDuration: 16193,
+            animationEasing: easings.easeInOutSine,
+          }}
+        />
+        {/* 6 */}
+        <AnimatedImage
+          src="/HersheyKiss.png"
+          width={80}
+          height={80}
+          alt="Kiss 5"
+          className="pointer-events-none absolute bottom-48 left-64 rotate-[325deg] scale-x-[-1]"
+          animationConfig={{
+            translateYAmount: 43,
+            additionalRotateAmount: -22,
+            animationDuration: 11618,
+            animationEasing: easings.easeInOutSine,
+          }}
+        />
+        {/* 7 */}
+        <AnimatedImage
+          src="/HersheyKiss.png"
+          width={120}
+          height={120}
+          alt="Kiss 6"
+          className="pointer-events-none absolute bottom-20 left-[26rem] rotate-[25deg] scale-x-[-1]"
+          animationConfig={{
+            translateYAmount: -90,
+            additionalRotateAmount: 130,
+            animationDuration: 14213,
+            animationEasing: easings.easeInOutSine,
+          }}
+        />
+        {/* 8 */}
+        <AnimatedImage
+          src="/HersheyKiss.png"
+          width={130}
+          height={130}
+          alt="Kiss 7"
+          className="pointer-events-none absolute bottom-36 right-[19.5rem] rotate-[330deg]"
+          animationConfig={{
+            translateYAmount: 45,
+            additionalRotateAmount: -25,
+            animationDuration: 9139,
+            animationEasing: easings.easeInOutSine,
+          }}
+        />
 
-          <AnimatedImage
-            src="/kiss.png"
-            width={80}
-            height={80}
-            alt="Kiss 3"
-            className="pointer-events-none absolute right-[28rem] top-14 rotate-[135deg] scale-x-[-1]"
-            animationConfig={{
-              translateYAmount: -100,
-              additionalRotateAmount: -250,
-              animationDuration: 17313,
-              animationEasing: easings.easeInOutSine,
-            }}
-          />
+        <AnimatedImage
+          src="/HersheyKiss.png"
+          width={90}
+          height={90}
+          alt="Kiss 8"
+          className="pointer-events-none absolute bottom-[16rem] right-[13rem] rotate-[60deg] scale-x-[-1]"
+          animationConfig={{
+            translateYAmount: 50,
+            additionalRotateAmount: 33,
+            animationDuration: 10214,
+          }}
+        />
 
-          <AnimatedImage
-            src="/kiss.png"
-            width={120}
-            height={120}
-            alt="Kiss 4"
-            className="pointer-events-none absolute right-64 top-2 rotate-[340deg] scale-x-[-1]"
-            animationConfig={{
-              translateYAmount: -42,
-              additionalRotateAmount: 33,
-              animationDuration: 8738,
-              animationEasing: easings.easeInOutSine,
-            }}
-          />
-
-          <AnimatedImage
-            src="/kiss.png"
-            width={80}
-            height={80}
-            alt="Kiss 5"
-            className="pointer-events-none absolute bottom-48 left-64 rotate-[325deg] scale-x-[-1]"
-            animationConfig={{
-              translateYAmount: 43,
-              additionalRotateAmount: -22,
-              animationDuration: 11618,
-              animationEasing: easings.easeInOutSine,
-            }}
-          />
-
-          <AnimatedImage
-            src="/kiss.png"
-            width={120}
-            height={120}
-            alt="Kiss 6"
-            className="pointer-events-none absolute bottom-20 left-[26rem] rotate-[25deg] scale-x-[-1]"
-            animationConfig={{
-              translateYAmount: -90,
-              additionalRotateAmount: 130,
-              animationDuration: 14213,
-              animationEasing: easings.easeInOutSine,
-            }}
-          />
-
-          <AnimatedImage
-            src="/kiss.png"
-            width={130}
-            height={130}
-            alt="Kiss 7"
-            className="pointer-events-none absolute bottom-36 right-[19.5rem] rotate-[330deg]"
-            animationConfig={{
-              translateYAmount: 45,
-              additionalRotateAmount: -25,
-              animationDuration: 9139,
-              animationEasing: easings.easeInOutSine,
-            }}
-          />
-
-          <AnimatedImage
-            src="/kiss.png"
-            width={90}
-            height={90}
-            alt="Kiss 8"
-            className="pointer-events-none absolute bottom-[21rem] right-[13rem] rotate-[60deg] scale-x-[-1]"
-            animationConfig={{
-              translateYAmount: 50,
-              additionalRotateAmount: 33,
-              animationDuration: 10214,
-            }}
-          />
-
-          {/* --- Text Content (Unchanged) --- */}
-          <div
-            className="z-10 flex flex-row gap-0 text-center text-[10rem] md:text-[15rem]"
-            style={{ textShadow: "2px 4px 4px #00000099" }}
-          >
-            <h1>H</h1>
-            <h1>E</h1>
-            <h1>R</h1>
-            <h1>E</h1>
-            <h1>S</h1>
-            <h1>Y</h1>
-          </div>
-          <div
-            className="z-10 flex flex-row  text-[5rem] md:text-[8rem]"
-            style={{ textShadow: "2px 4px 4px #00000099" }}
-          >
-            <h1>K</h1>
-            <h1>I</h1>
-            <h1>S</h1>
-            <h1>S</h1>
-            <h1>E</h1>
-            <h1>S</h1>
-          </div>
+        {/* --- Text Content (Unchanged) --- */}
+        <div
+          className="z-10 flex flex-row gap-0 text-center text-[10rem] md:text-[15rem]"
+          style={{ textShadow: "2px 4px 4px #00000099" }}
+        >
+          <h1>H</h1>
+          <h1>E</h1>
+          <h1>R</h1>
+          <h1>S</h1>
+          <h1>H</h1>
+          <h1>E</h1>
+          <h1>Y</h1>
+          <h1>'</h1>
+          <h1>S</h1>
+        </div>
+        <div
+          className="z-10 flex flex-row  text-[6rem] md:text-[10rem]"
+          style={{ textShadow: "2px 4px 4px #00000099" }}
+        >
+          <h1>K</h1>
+          <h1>I</h1>
+          <h1>S</h1>
+          <h1>S</h1>
+          <h1>E</h1>
+          <h1>S</h1>
         </div>
       </div>
-    </main>
-  );
-}; // Added closing parenthesis for Home component
+    </div>
+  </main>
+); // Added closing parenthesis for Home component
 
 // Add default export
 export default Home;
